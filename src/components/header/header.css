@@ -27,7 +27,6 @@
     font-style: normal;
     font-weight: bold;
     font-size: 2rem;
-    /* identical to box height */
     text-align: center;
     color: #333333;
 }
@@ -39,10 +38,7 @@
     font-style: italic;
     font-weight: normal;
     font-size: 1.8rem;
-    /* identical to box height */
-
     text-align: center;
-
     color: #000000;
 }
 
@@ -62,26 +58,14 @@
     .headerTitle {
         margin-top: 0rem;
         margin-bottom: -0.2rem;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: bold;
         font-size: 1.4rem;
-        /* identical to box height */
-        text-align: center;
-        color: #333333;
     }
     
     .tagline {
         margin-top: -0.2rem;
         margin-bottom: 2rem;
-        font-family: Cormorant;
-        font-style: italic;
-        font-weight: normal;
         font-size: 1.2rem;
-        /* identical to box height */
-    
         text-align: center;
-    
         color: #000000;
     }
 }
