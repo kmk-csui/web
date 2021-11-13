@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react'
 import './navbar.css'
 import KMKLogo from './../../assets/KMK-logo-small.svg'
 import ArrowUp from './../../assets/arrow-up.svg'
+import Hamburger from './../../assets/hamburger.svg'
 import PropTypes from 'prop-types'
 
 const Navbar = ({ navMenu }) => {
   const [navToggled, setNavToggled] = useState(false)
   const [windowDimension, setWindowDimension] = useState(null);
 
+  // Check mobile
   useEffect(() => {
     setWindowDimension(window.innerWidth);
   }, []);
@@ -21,7 +23,7 @@ const Navbar = ({ navMenu }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const isMobile = windowDimension <= 640;
+  const isMobile = windowDimension <= 767;
   const currentPage = window.location.pathname === "/" ? "home" : window.location.pathname.slice(1);
 
   const handleNavToggled = () => {
@@ -30,11 +32,19 @@ const Navbar = ({ navMenu }) => {
 
   return (
     <div className="nav-wrapper">
-      <button className="nav-mobile-icon" onClick={handleNavToggled}>
-        <img src={ArrowUp} alt="Navbar" />
-      </button>
-      <div className="nav">
-        <a href="/" className="nav-title">
+      <div className="nav-mobile-button" onClick={handleNavToggled}>
+        <img src={navToggled ? ArrowUp : Hamburger} alt="toggle-icon" />
+      </div>
+      <div 
+        className="nav" 
+        style={isMobile && navToggled ? 
+          {background: "linear-gradient(180deg, rgba(121, 163, 202, 0.64) 0%, #79a3ca 100%)"} : {}}
+      >
+        <a href="/" 
+          className="nav-title" 
+          style={isMobile && !navToggled ? 
+            {background: "linear-gradient(180deg, #cfe7e7 0%, #ffefdc 100%)"} : {}}
+        >
           <img src={KMKLogo} className="nav-logo" alt="KMK-logo" />
           <p>KMK Fasilkom UI</p>
         </a>
@@ -43,11 +53,11 @@ const Navbar = ({ navMenu }) => {
             {navMenu.map((menu, key) => (
               <li 
                 key={key} 
-                className="nav-item" 
-                style={!isMobile && menu.toLowerCase() === currentPage ? {fontWeight: "bold"} : {}}>
-                  <a href={menu === "Home" ? "/" : `/${menu.toLowerCase()}`}>
-                    {!isMobile ? menu : `> ${menu} <`}
-                  </a>
+                style={!isMobile && menu.toLowerCase() === currentPage ? {fontWeight: "bold"} : {}}
+              >
+                <a href={menu === "Home" ? "/" : `/${menu.toLowerCase()}`}>
+                  {!isMobile ? menu : `> ${menu} <`}
+                </a>
               </li>  
             ))}
           </ul>
