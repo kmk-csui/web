@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@100;500;700&display=swap');
+
+.nav-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.nav {
+  margin: 0 9.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: #333;
+  /* color: #ddd; */
+  font-family: Poppins;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-right: 1rem;
+}
+
+.nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 2rem 2.5rem;
+  font-size: 1.75rem;
+}
+
+.nav-item-bold {
+  padding: 2rem 2.5rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
