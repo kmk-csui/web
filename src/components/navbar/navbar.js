@@ -15,7 +15,13 @@ const Navbar = ({ navMenu }) => {
         </a>
         <div className="nav-right">
           {navMenu.map((menu, key) => (
-              <a key={key} href="#" className={`nav-item${menu.toLowerCase() === currentPage ? "-bold" : ""}`}>{menu}</a>  
+              <a 
+                key={key} 
+                href={menu === "Home" ? "/" : `/${menu.toLowerCase()}`}
+                className="nav-item" 
+                style={menu.toLowerCase() === currentPage ? {fontWeight: "bold"} : {}}>
+                  {menu}
+              </a>  
           ))}
         </div>
       </div>

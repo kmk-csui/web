@@ -8,17 +8,11 @@
 }
 
 .nav {
-  margin: 0 9.75rem;
+  /* margin: 0 7.25rem; */
+  margin: 0 1.875rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav a {
-  color: #333;
-  /* color: #ddd; */
-  font-family: Poppins;
-  text-decoration: none;
 }
 
 .nav-right {
@@ -36,16 +30,19 @@
   justify-content: center;
   align-items: center;
   font-size: 1.875rem;
+  line-height: 2.8rem;
   font-weight: bold;
 }
 
 .nav-item {
-  padding: 2rem 2.5rem;
+  padding: 1.875rem 2rem;
   font-size: 1.75rem;
+  line-height: 2.6rem;
 }
 
-.nav-item-bold {
-  padding: 2rem 2.5rem;
-  font-size: 1.75rem;
-  font-weight: bold;
+.nav a {
+  color: #333;
+  /* color: #ddd; */
+  font-family: Poppins;
+  text-decoration: none;
 }
