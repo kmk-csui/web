@@ -1,0 +1,17 @@
+.Footer{
+    min-height: 132px;
+    background-color: #FFEFDC;
+    align-items: center;
+    position: relative;
+}
+.Footer .container{
+    margin:auto;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
