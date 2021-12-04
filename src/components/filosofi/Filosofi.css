@@ -1,0 +1,15 @@
+.header {
+  text-align: left;
+}
+
+.indent {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 4rem;
+  align-items: center;
+}
+
+p {
+  gap: 4rem;
+  text-align: left;
+}
