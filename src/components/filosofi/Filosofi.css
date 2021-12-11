@@ -1,15 +1,22 @@
 .header {
-  text-align: left;
+	text-align: left;
+	margin-bottom: 3rem;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.header-background {
+	background: linear-gradient(to left, #FFEFDC, #FFEFDC) no-repeat 234px 50px;
 }
 
 .indent {
-  display: flex;
-  margin-bottom: 3rem;
-  gap: 4rem;
-  align-items: center;
+	display: flex;
+	margin-bottom: 3rem;
+	gap: 4rem;
+	align-items: center;
 }
 
 p {
-  gap: 4rem;
-  text-align: left;
+	gap: 4rem;
+	text-align: left;
 }
