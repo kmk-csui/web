@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
 import logo from '../../assets/big-logo.png';
-import './Filosofi.css'
+import './Filosofi.css';
 
 export default function Filosofi() {
   return (
     <div>
-      <h1 className="header">Filosofi Logo</h1>
+      <div className="header-background">
+        <h1 className="header">Filosofi Logo</h1>
+      </div>
       <div className="indent">
-        <img src={logo} alt="Big KMK Logo" height={3}/>
+        <img src={logo} alt="Big KMK Logo" width={200} />
         <p>
           Salib merupakan salah satu elemen penting dari agama Katolik yang melambangkan pengorbanan Yesus Kristus
           untuk menebus dosa umat manusia. Salib yang dibuat dengan dasar sirkuit dimaksudkan untuk merepresentasikan
