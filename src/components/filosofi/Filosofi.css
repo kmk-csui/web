@@ -1,17 +1,5 @@
-.header {
-	text-align: left;
-	margin-bottom: 3rem;
-	font-weight: bold;
-	font-size: 2rem;
-	min-width: 0;
-}
-
 img {
 	height: auto;
-}
-
-.header-background {
-	background: linear-gradient(to left, #FFEFDC, #FFEFDC) no-repeat 234px 50px;
 }
 
 .indent {
