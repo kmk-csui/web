@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import LogoKMK from '../../assets/BigLogoKMK.svg'
-import './header.css'
+import './Header.css'
 
 
 export default function Header({ headerTitle }) {
