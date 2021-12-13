@@ -1,14 +1,10 @@
-import React from 'react';
 import logo from '../../assets/big-logo.png';
+import Header from '../../components/SectionHeader/SectionHeader';
 import './Filosofi.css';
-import Header from './header/Header';
 
 export default function Filosofi() {
   return (
     <div>
-      {/* <div className='header-wrapper'> */}
-      {/* <h1 className="header">Filosofi Logo</h1> */}
-      {/* </div> */}
       <Header color={"#ffefdc"}>Filosofi Logo</Header>
       <div className="indent">
         <img src={logo} alt="Big KMK Logo" width={200} />

@@ -1,7 +1,6 @@
-import React from 'react';
-import './Header.css';
+import './SectionHeader.css';
 
-export default function Header({ children, color }) {
+export default function SectionHeader({ children, color }) {
     return (
         <div className='header-wrapper'>
             <div style={{
