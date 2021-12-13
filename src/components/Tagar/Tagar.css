@@ -1,0 +1,22 @@
+.English {
+    margin-top: 4rem;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 8rem;
+}
+
+.Latin{
+    margin-top: 0.75rem;
+    font-family: Cormorant;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+}
