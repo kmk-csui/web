@@ -7,13 +7,13 @@ import './HomePage.css';
 
 export default function HomePage() {
     return (
-        <div>
+        <>
             <Header />
             <div className="HomePage">
                 <Filosofi />
                 <Tagar />
                 <VisiMisi />
             </div>
-        </div>
+        </>
     )
 }
