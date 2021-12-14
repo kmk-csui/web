@@ -1,0 +1,27 @@
+.CoreDivision {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.Left {
+    align-self: start;
+}
+
+.Right {
+    align-self: end;
+}
+
+.CoreDivisionMember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Header {
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+.Division {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.Content {
+    margin-top: 2.5rem;
+}
+
+.Person {
+    display: flex;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.Header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Program {
+    margin-top: 2rem;
+}
