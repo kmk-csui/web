@@ -1,5 +1,5 @@
-import logo from '../../assets/big-logo.png';
-import Header from '../../components/SectionHeader/SectionHeader';
+import logo from 'assets/big-logo.png';
+import Header from 'components/SectionHeader/SectionHeader';
 import './Filosofi.css';
 
 export default function Filosofi() {

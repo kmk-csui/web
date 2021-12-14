@@ -1,4 +1,4 @@
-import Header from "../../components/SectionHeader/SectionHeader";
+import Header from "components/SectionHeader/SectionHeader";
 import './Tagar.css';
 
 export default function Tagar() {

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import LogoKMK from '../../assets/BigLogoKMK.svg'
+import LogoKMK from 'assets/BigLogoKMK.svg'
 import './Header.css'
 
 
