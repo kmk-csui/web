@@ -1,10 +1,10 @@
+import ArrowUp from 'assets/arrow-up.svg'
+import Hamburger from 'assets/hamburger.svg'
+import KMKLogo from 'assets/KMK-logo-small.svg'
 import PropTypes from 'prop-types'
 import { useEffect, useState } from 'react'
-import ArrowUp from './../../assets/arrow-up.svg'
-import Hamburger from './../../assets/hamburger.svg'
-import KMKLogo from './../../assets/KMK-logo-small.svg'
+import { Link } from "react-router-dom"
 import './Navbar.css'
-
 export default function Navbar({ navMenu }) {
   const [navToggled, setNavToggled] = useState(false)
   const [windowDimension, setWindowDimension] = useState(null);
@@ -50,7 +50,14 @@ export default function Navbar({ navMenu }) {
         </a>
         {(isMobile && navToggled) | (!isMobile) ?
           <ul>
-            {navMenu.map((menu, key) => (
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="division">Divisi</Link></li>
+            <li><Link to="gallery">Galeri</Link></li>
+            {/* <li
+            key={key}
+            style={!isMobile && menu.toLowerCase() === currentPage ? { fontWeight: "bold" } : {}}
+            ></li> */}
+            {/* {navMenu.map((menu, key) => (
               <li
                 key={key}
                 style={!isMobile && menu.toLowerCase() === currentPage ? { fontWeight: "bold" } : {}}
@@ -59,7 +66,7 @@ export default function Navbar({ navMenu }) {
                   {!isMobile ? menu : `> ${menu} <`}
                 </a>
               </li>
-            ))}
+            ))} */}
           </ul>
           : null
         }

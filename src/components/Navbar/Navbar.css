@@ -54,6 +54,13 @@
   padding: 1.875rem 2rem;
 }
 
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 @media only screen and (max-width: 767px) {
   .nav-wrapper {
     position: relative;
