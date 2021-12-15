@@ -1,8 +1,5 @@
 .Gallery {
     display: grid;
-    padding-left: 9rem;
-    padding-right: 9rem;
-    padding-top: 4rem;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 }
