@@ -28,8 +28,8 @@ function CoreDivisionMember({ position, name, image, pos }) {
     return (
         <div className={className}>
             {pos === "left" && <img src={image} alt={"Anggota Inti"} width="125vh" />}
-            <div className="CoreDivisionMemberInfo">
-                <p className='Header'>{position}</p>
+            <div>
+                <p className='CoreDivisionHeader'>{position}</p>
                 <p>{name}</p>
             </div>
             {pos === "right" && <img src={image} alt={"Anggota Inti"} width="125vh" />}

@@ -1,6 +1,5 @@
 .visimisi {
-    font: 24px poppins;
-    font-weight: 400;
+    font: 1.25rem poppins;
     font-style: normal;
     text-align: left;
 }
@@ -10,64 +9,9 @@
 }
 
 .judulvisimisi {
-    font-weight: 600;
     font-size: 36px;
     padding-top: 5px;
     padding-bottom: 60px;
     text-align: left;
     position: relative;
-}
-
-.poinvisimisi {
-    display: flex;
-    margin-bottom: 80px;
-}
-
-.deskripsivisimisi {
-    padding-bottom: 40px;
-}
-
-.tulisanvisimisi {
-    width: 70%;
-    position: relative;
-}
-
-.kotakmisi {
-    position: absolute;
-    vertical-align: sub;
-    margin-left: 60px;
-}
-
-.fotovisimisi {
-    width: 10%;
-    background-color: grey;
-}
-
-.visimisilogo {
-    height: 100px;
-    margin: auto;
-}
-
-.tulisanjudul {
-    padding-left: 5px;
-    position: relative;
-    z-index: 3;
-}
-
-.kotakwarnavisi {
-    position: absolute;
-    top: 32px;
-    height: 27px;
-    width: 234px;
-    background-color: #ffefdcd7;
-    z-index: 998;
-}
-
-.kotakwarnamisi {
-    position: absolute;
-    top: 32px;
-    height: 27px;
-    width: 234px;
-    background-color: #cfe7e7d2;
-    z-index: 2;
 }

@@ -7,15 +7,15 @@ export default function Division({ name, description, chief, secondInCommands, p
             <img src={image} alt={`Anggota Divisi ${name}`} width="175vh" />
             <div>
                 <Header color="#CFE7E7">Divisi {name}</Header>
-                <p className="Header">Tentang Divisi</p>
+                <p className="HeaderDivision">Tentang Divisi</p>
                 <p>{description}</p>
                 <div className="Person">
                     <div>
-                        <p className="Header">PJ</p>
+                        <p className="HeaderDivision">PJ</p>
                         <p>{chief}</p>
                     </div>
                     <div>
-                        <p className="Header" >Wakil PJ</p>
+                        <p className="HeaderDivision" >Wakil PJ</p>
                         {
                             secondInCommands.map((item, index) => {
                                 return <p key={index}>{item}</p>
@@ -23,7 +23,7 @@ export default function Division({ name, description, chief, secondInCommands, p
                         }
                     </div>
                 </div>
-                <p className="Header Program">Program Kerja</p>
+                <p className="HeaderDivision Program">Program Kerja</p>
                 <ul>
                     {
                         programs.map((item, index) => {

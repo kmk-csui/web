@@ -12,7 +12,7 @@ export default function DivisionPage() {
     return (
         <>
             <Header headerTitle="Divisi KMK Fasilkom UI 2021" />
-            <div className='Content'>
+            <div className='DivisionPage'>
                 <div className='MemberList'>
                     <CoreDivision />
                     <Divider />

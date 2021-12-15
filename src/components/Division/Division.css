@@ -6,17 +6,13 @@
     padding-right: 4rem;
 }
 
-.Content {
-    margin-top: 2.5rem;
-}
-
 .Person {
     display: flex;
     margin-top: 4rem;
     gap: 3rem;
 }
 
-.Header {
+.HeaderDivision {
     font-size: 1.5rem;
     font-weight: bold;
 }
