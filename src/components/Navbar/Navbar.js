@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 import './Navbar.css'
-export default function Navbar({ navMenu }) {
+export default function Navbar() {
   const [navToggled, setNavToggled] = useState(false)
   const [windowDimension, setWindowDimension] = useState(null);
 
@@ -24,7 +24,7 @@ export default function Navbar({ navMenu }) {
   }, []);
 
   const isMobile = windowDimension <= 767;
-  const currentPage = window.location.pathname === "/" ? "home" : window.location.pathname.slice(1);
+  // const currentPage = window.location.pathname === "/" ? "home" : window.location.pathname.slice(1);
 
   const handleNavToggled = () => {
     setNavToggled(!navToggled)
