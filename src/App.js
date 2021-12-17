@@ -1,10 +1,10 @@
-import Footer from 'components/Footer/Footer';
-import Navbar from 'components/Navbar/Navbar';
-import DivisionPage from 'pages/DivisionPage/DivisionPage';
-import GalleryPage from 'pages/GalleryPage/GalleryPage';
-import HomePage from 'pages/HomePage/HomePage';
+import Footer from "components/Footer/Footer";
+import Navbar from "components/Navbar/Navbar";
+import DivisionPage from "pages/DivisionPage/DivisionPage";
+import GalleryPage from "pages/GalleryPage/GalleryPage";
+import HomePage from "pages/HomePage/HomePage";
 import { Route, Routes } from "react-router-dom";
-import './App.css';
+import "./App.css";
 
 export default function App() {
   return (

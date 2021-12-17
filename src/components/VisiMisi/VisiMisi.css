@@ -1,17 +1,17 @@
 .visimisi {
-    font: 1.25rem poppins;
-    font-style: normal;
-    text-align: left;
+  font: 1.25rem poppins;
+  font-style: normal;
+  text-align: left;
 }
 
 .blockvisimisi {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .judulvisimisi {
-    font-size: 36px;
-    padding-top: 5px;
-    padding-bottom: 60px;
-    text-align: left;
-    position: relative;
+  font-size: 36px;
+  padding-top: 5px;
+  padding-bottom: 60px;
+  text-align: left;
+  position: relative;
 }

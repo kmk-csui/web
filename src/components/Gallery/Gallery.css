@@ -1,9 +1,9 @@
 .Gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .Gallery > img {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }

@@ -1,12 +1,12 @@
-import ArrowUp from 'assets/arrow-up.svg'
-import Hamburger from 'assets/hamburger.svg'
-import KMKLogo from 'assets/KMK-logo-small.svg'
-import PropTypes from 'prop-types'
-import { useEffect, useState } from 'react'
-import { Link } from "react-router-dom"
-import './Navbar.css'
+import ArrowUp from "assets/arrow-up.svg";
+import Hamburger from "assets/hamburger.svg";
+import KMKLogo from "assets/KMK-logo-small.svg";
+import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 export default function Navbar() {
-  const [navToggled, setNavToggled] = useState(false)
+  const [navToggled, setNavToggled] = useState(false);
   const [windowDimension, setWindowDimension] = useState(null);
 
   // Check mobile
@@ -27,8 +27,8 @@ export default function Navbar() {
   // const currentPage = window.location.pathname === "/" ? "home" : window.location.pathname.slice(1);
 
   const handleNavToggled = () => {
-    setNavToggled(!navToggled)
-  }
+    setNavToggled(!navToggled);
+  };
 
   return (
     <div className="nav-wrapper">
@@ -37,22 +37,41 @@ export default function Navbar() {
       </div>
       <div
         className="nav"
-        style={isMobile && navToggled ?
-          { background: "linear-gradient(180deg, rgba(121, 163, 202, 0.64) 0%, #79a3ca 100%)" } : {}}
+        style={
+          isMobile && navToggled
+            ? {
+                background:
+                  "linear-gradient(180deg, rgba(121, 163, 202, 0.64) 0%, #79a3ca 100%)",
+              }
+            : {}
+        }
       >
-        <a href="/"
+        <a
+          href="/"
           className="nav-title"
-          style={isMobile && !navToggled ?
-            { background: "linear-gradient(180deg, #cfe7e7 0%, #ffefdc 100%)" } : {}}
+          style={
+            isMobile && !navToggled
+              ? {
+                  background:
+                    "linear-gradient(180deg, #cfe7e7 0%, #ffefdc 100%)",
+                }
+              : {}
+          }
         >
           <img src={KMKLogo} className="nav-logo" alt="KMK-logo" />
           <p>KMK Fasilkom UI</p>
         </a>
-        {(isMobile && navToggled) | (!isMobile) ?
+        {(isMobile && navToggled) | !isMobile ? (
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="division">Divisi</Link></li>
-            <li><Link to="gallery">Galeri</Link></li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="division">Divisi</Link>
+            </li>
+            <li>
+              <Link to="gallery">Galeri</Link>
+            </li>
             {/* <li
             key={key}
             style={!isMobile && menu.toLowerCase() === currentPage ? { fontWeight: "bold" } : {}}
@@ -68,17 +87,16 @@ export default function Navbar() {
               </li>
             ))} */}
           </ul>
-          : null
-        }
+        ) : null}
       </div>
     </div>
-  )
+  );
 }
 
 Navbar.defaultProps = {
-  navMenu: ['Home', 'Divisi', 'Galeri']
-}
+  navMenu: ["Home", "Divisi", "Galeri"],
+};
 
 Navbar.propTypes = {
-  navMenu: PropTypes.arrayOf(PropTypes.string)
-}
+  navMenu: PropTypes.arrayOf(PropTypes.string),
+};

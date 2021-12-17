@@ -1,16 +1,16 @@
 .Indent > img {
-	height: auto;
+  height: auto;
 }
 
 .Indent {
-	display: flex;
-	margin-bottom: 3rem;
-	gap: 4rem;
-	align-items: center;
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 4rem;
+  align-items: center;
 }
 
 .FilosofiContent {
-	gap: 4rem;
-	text-align: left;
-	font-size: 1.25rem;
+  gap: 4rem;
+  text-align: left;
+  font-size: 1.25rem;
 }
