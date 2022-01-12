@@ -8,13 +8,13 @@ import "./HomePage.css";
 export default function HomePage() {
   return (
     <>
-      <Header />
+      <Header/>
       <div className="HomePage">
-        <Filosofi />
-        <Divider />
-        <Tagar />
-        <Divider />
-        <VisiMisi />
+        <Filosofi/>
+        <Divider/>
+        <Tagar/>
+        <Divider/>
+        <VisiMisi/>
       </div>
     </>
   );

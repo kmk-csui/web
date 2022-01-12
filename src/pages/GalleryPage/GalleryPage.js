@@ -5,9 +5,9 @@ import "./GalleryPage.css";
 export default function GalleryPage() {
   return (
     <>
-      <Header headerTitle="Galeri KMK Fasilkom UI" />
+      <Header headerTitle="Galeri KMK Fasilkom UI"/>
       <div className="GalleryPage">
-        <Gallery />
+        <Gallery/>
       </div>
     </>
   );

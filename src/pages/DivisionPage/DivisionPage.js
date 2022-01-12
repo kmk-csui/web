@@ -11,11 +11,11 @@ import "./DivisionPage.css";
 export default function DivisionPage() {
   return (
     <>
-      <Header headerTitle="Divisi KMK Fasilkom UI 2021" />
+      <Header headerTitle="Divisi KMK Fasilkom UI 2021"/>
       <div className="DivisionPage">
         <div className="MemberList">
-          <CoreDivision />
-          <Divider />
+          <CoreDivision/>
+          <Divider/>
           <Division
             name="Acara"
             description="Divisi yang men gelola acara internal yang bertujuan untuk mengakrabkan dan meningkatkan rasa kekeluargaan antar-anggota KMK Fasilkom UI."
@@ -24,7 +24,7 @@ export default function DivisionPage() {
             programs={["Jumatan", "Doa Bersama"]}
             image={ACARA}
           />
-          <Divider />
+          <Divider/>
           <Division
             name="HPDD"
             description="Divisi yang bertugas membuat dan mengelola konten serta publikasi di media sosial KMK Fasilkom UI."
@@ -33,7 +33,7 @@ export default function DivisionPage() {
             programs={["Publikasi", "Kartu Ulang Tahun", "Kartu Ucapan Wisuda"]}
             image={HPDD}
           />
-          <Divider />
+          <Divider/>
           <Division
             name="PSDM"
             description="Divisi yang bertugas untuk mempererat kekeluargaan antara sesama anggota KMK Fasilkom Ui baik yang masih aktif maupun alumni."
@@ -46,7 +46,7 @@ export default function DivisionPage() {
             ]}
             image={PSDM}
           />
-          <Divider />
+          <Divider/>
           <Division
             name="ITA"
             description="Divisi yang bertugas untuk membantu akademis anggota KMK Fasilkom UI dan mengembangkan teknologi informasi untuk KMK Fasilkom UI"
