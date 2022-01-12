@@ -1,28 +1,28 @@
 .CoreDivision {
-  display: flex;
-  flex-direction: column;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  width: 100%;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .Left {
-  align-self: start;
+    align-self: start;
 }
 
 .Right {
-  align-self: end;
+    align-self: end;
 }
 
 .CoreDivisionMember {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .CoreDivisionHeader {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }

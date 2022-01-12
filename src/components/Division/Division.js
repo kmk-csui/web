@@ -2,16 +2,16 @@ import Header from "components/SectionHeader/SectionHeader";
 import "./Division.css";
 
 export default function Division({
-  name,
-  description,
-  chief,
-  secondInCommands,
-  programs,
-  image,
-}) {
+                                   name,
+                                   description,
+                                   chief,
+                                   secondInCommands,
+                                   programs,
+                                   image,
+                                 }) {
   return (
     <section className="Division">
-      <img src={image} alt={`Anggota Divisi ${name}`} width="175vh" />
+      <img src={image} alt={`Anggota Divisi ${name}`} width="175vh"/>
       <div>
         <Header color="#CFE7E7">Divisi {name}</Header>
         <p className="HeaderDivision">Tentang Divisi</p>

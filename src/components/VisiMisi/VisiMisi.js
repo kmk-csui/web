@@ -1,18 +1,18 @@
 import Header from "components/SectionHeader/SectionHeader";
 import "./VisiMisi.css";
 
-function VisiMisi() {
+export default function VisiMisi() {
   return (
     <section className="visimisi">
       <Header color="#FFEFDC">Visi</Header>
-      <div className="deskripsivisimisi">
+      <div className="deskripsivisi">
         Menjadikan KMK Fasilkom UI sebagai rumah dan wadah bagi semua anggotanya
         untuk dapat saling mengembangkan diri dengan berlandaskan kekeluargaan
         dan cinta kasih Allah.
       </div>
 
       <Header color="#CFE7E7">Misi</Header>
-      <div className="deskripsivisimisi">
+      <div>
         <div>
           {/* <div className="fotovisimisi"><img src={logo} className="visimisilogo App-logo" alt="logo" /></div> */}
           <p>
@@ -37,5 +37,3 @@ function VisiMisi() {
     </section>
   );
 }
-
-export default VisiMisi;

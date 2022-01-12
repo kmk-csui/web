@@ -1,22 +1,22 @@
 .Division {
-  display: flex;
-  gap: 4rem;
-  align-items: center;
-  padding-left: 4rem;
-  padding-right: 4rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .Person {
-  display: flex;
-  margin-top: 4rem;
-  gap: 3rem;
+    display: flex;
+    margin-top: 4rem;
+    gap: 3rem;
 }
 
 .HeaderDivision {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .Program {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }

@@ -1,22 +1,22 @@
 .English {
-  margin-top: 4rem;
-  font-family: "Poppins";
-  font-style: italic;
-  font-weight: normal;
-  font-size: 8rem;
+    margin-top: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 8rem;
 }
 
 .Latin {
-  margin-top: 0.75rem;
-  font-family: Cormorant;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 2rem;
+    margin-top: 0.75rem;
+    font-family: Cormorant, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2rem;
 }
 
 .TagarContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
 }

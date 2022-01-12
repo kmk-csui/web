@@ -2,10 +2,10 @@ import LogoKMK from "assets/BigLogoKMK.svg";
 import PropTypes from "prop-types";
 import "./Header.css";
 
-export default function Header({ headerTitle }) {
+export default function Header({headerTitle}) {
   return (
     <header className="header">
-      <img src={LogoKMK} className="logo" alt="Logo KMK Fasilkom" />
+      <img src={LogoKMK} className="logo" alt="Logo KMK Fasilkom"/>
       <h1 className="headerTitle">{headerTitle}</h1>
       <h2 className="tagline">#LuceatLuxVestra</h2>
     </header>

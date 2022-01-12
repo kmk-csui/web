@@ -37,7 +37,7 @@ export default function CoreDivision() {
   );
 }
 
-function CoreDivisionMember({ position, name, image, pos }) {
+function CoreDivisionMember({position, name, image, pos}) {
   let className = "CoreDivisionMember";
   if (pos === "left") {
     className += " Left";
@@ -47,13 +47,13 @@ function CoreDivisionMember({ position, name, image, pos }) {
 
   return (
     <div className={className}>
-      {pos === "left" && <img src={image} alt={"Anggota Inti"} width="125vh" />}
+      {pos === "left" && <img src={image} alt={"Anggota Inti"} width="125vh"/>}
       <div>
         <p className="CoreDivisionHeader">{position}</p>
         <p>{name}</p>
       </div>
       {pos === "right" && (
-        <img src={image} alt={"Anggota Inti"} width="125vh" />
+        <img src={image} alt={"Anggota Inti"} width="125vh"/>
       )}
     </div>
   );

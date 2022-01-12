@@ -9,7 +9,7 @@ export default function Filosofi() {
       <Header color={"#ffefdc"}>Filosofi Logo</Header>
       <div className="Indent">
         <MediaQuery minWidth={1224}>
-          <img src={logo} alt="Big KMK Logo" width={200} />
+          <img src={logo} alt="Big KMK Logo" width={200}/>
         </MediaQuery>
         <p className="FilosofiContent">
           Salib merupakan salah satu elemen penting dari agama Katolik yang

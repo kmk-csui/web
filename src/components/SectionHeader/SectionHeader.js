@@ -1,6 +1,6 @@
 import "./SectionHeader.css";
 
-export default function SectionHeader({ children, color }) {
+export default function SectionHeader({children, color}) {
   return (
     <div className="header-wrapper">
       <div
