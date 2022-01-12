@@ -4,3 +4,10 @@
     gap: 2rem;
     place-self: center;
 }
+
+@media screen and (max-width: 1280px) {
+    .Gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

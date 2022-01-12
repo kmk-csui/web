@@ -59,3 +59,16 @@
         color: #000000;
     }
 }
+
+.HeaderMobile {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #333333;
+    background: #FFEFDC;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}

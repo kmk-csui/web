@@ -3,3 +3,11 @@
     padding-right: 10rem;
     padding-top: 3rem;
 }
+
+@media screen and (max-width: 1280px) {
+    .GalleryPage {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+}
