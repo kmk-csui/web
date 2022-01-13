@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./Header.css";
 import {Desktop, Mobile} from "../Responsive/Responsive";
 
-export default function Header({headerTitle}) {
+export default function Header({headerTitle, isHomePage}) {
   return (
     <>
       <Desktop>
@@ -14,8 +14,12 @@ export default function Header({headerTitle}) {
         </header>
       </Desktop>
       <Mobile>
-        <header className="HeaderMobile">
+        <header className={`HeaderMobile`} style={
+          isHomePage ? {height: "inherit"} : {height: "3rem"}
+        }>
+          {isHomePage && <img src={LogoKMK} className="logo" alt="Logo KMK Fasilkom"/>}
           <h1 className="headerTitleMobile">{headerTitle}</h1>
+          {isHomePage && <h2 className="tagline">#LuceatLuxVestra</h2>}
         </header>
       </Mobile>
     </>
@@ -24,8 +28,10 @@ export default function Header({headerTitle}) {
 
 Header.defaultProps = {
   headerTitle: "KMK Fasilkom UI 2021",
+  isHomePage: false,
 };
 
 Header.propTypes = {
   headerTitle: PropTypes.string,
+  isHomePage: PropTypes.bool,
 };

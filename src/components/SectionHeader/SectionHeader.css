@@ -1,4 +1,4 @@
-.header-wrapper {
+.HeaderWrapper {
     text-align: left;
     margin-bottom: 3rem;
     font-weight: bold;
@@ -8,6 +8,27 @@
     align-items: flex-start;
 }
 
-.header-text {
+.HeaderWrapperMobile {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.HeaderBackgroundMobile {
+    height: 3rem;
+}
+
+.HeaderText {
     padding-left: 0.75rem;
+}
+
+.HeaderTextMobile {
+    padding-top: 4%;
 }

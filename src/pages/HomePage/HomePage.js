@@ -8,7 +8,7 @@ import "./HomePage.css";
 export default function HomePage() {
   return (
     <>
-      <Header/>
+      <Header isHomePage={true}/>
       <div className="HomePage">
         <Filosofi/>
         <Divider/>
