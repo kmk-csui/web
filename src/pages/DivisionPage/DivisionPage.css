@@ -8,3 +8,10 @@
 .DivisionPage {
     padding-top: 3rem;
 }
+
+@media screen and (max-width: 1280px) {
+    .MemberList {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

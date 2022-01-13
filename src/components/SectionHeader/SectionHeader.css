@@ -10,7 +10,7 @@
 
 .HeaderWrapperMobile {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom: 2rem;
     width: 100vw;
@@ -31,4 +31,13 @@
 
 .HeaderTextMobile {
     padding-top: 4%;
+}
+
+@media screen and (max-width: 1280px) {
+    .HeaderWrapper {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        place-content: center;
+    }
 }

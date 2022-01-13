@@ -9,10 +9,12 @@
 
 .Left {
     align-self: start;
+    text-align: left;
 }
 
 .Right {
     align-self: end;
+    text-align: right;
 }
 
 .CoreDivisionMember {
@@ -25,4 +27,16 @@
 .CoreDivisionHeader {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1280px) {
+    .CoreDivision {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .CoreDivisionHeader {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
 }

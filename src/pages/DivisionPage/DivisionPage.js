@@ -3,10 +3,10 @@ import HPDD from "assets/division/hpdd.png";
 import ITA from "assets/division/ita.png";
 import PSDM from "assets/division/psdm.png";
 import Divider from "components/Divider/Divider";
-import CoreDivision from "components/Division/CoreDivision";
 import Division from "components/Division/Division";
 import Header from "components/Header/Header";
 import "./DivisionPage.css";
+import CoreDivision from "components/Division/CoreDivision";
 
 export default function DivisionPage() {
   return (
@@ -15,16 +15,16 @@ export default function DivisionPage() {
       <div className="DivisionPage">
         <div className="MemberList">
           <CoreDivision/>
-          <Divider/>
+          <Divider isGalleryPage={true}/>
           <Division
             name="Acara"
-            description="Divisi yang men gelola acara internal yang bertujuan untuk mengakrabkan dan meningkatkan rasa kekeluargaan antar-anggota KMK Fasilkom UI."
+            description="Divisi yang mengelola acara internal yang bertujuan untuk mengakrabkan dan meningkatkan rasa kekeluargaan antar-anggota KMK Fasilkom UI."
             chief="Julian Fernando"
             secondInCommands={["Marcia Nadin Pramasiwi"]}
             programs={["Jumatan", "Doa Bersama"]}
             image={ACARA}
           />
-          <Divider/>
+          <Divider isGalleryPage={true}/>
           <Division
             name="HPDD"
             description="Divisi yang bertugas membuat dan mengelola konten serta publikasi di media sosial KMK Fasilkom UI."
@@ -33,7 +33,7 @@ export default function DivisionPage() {
             programs={["Publikasi", "Kartu Ulang Tahun", "Kartu Ucapan Wisuda"]}
             image={HPDD}
           />
-          <Divider/>
+          <Divider isGalleryPage={true}/>
           <Division
             name="PSDM"
             description="Divisi yang bertugas untuk mempererat kekeluargaan antara sesama anggota KMK Fasilkom Ui baik yang masih aktif maupun alumni."
@@ -46,7 +46,7 @@ export default function DivisionPage() {
             ]}
             image={PSDM}
           />
-          <Divider/>
+          <Divider isGalleryPage={true}/>
           <Division
             name="ITA"
             description="Divisi yang bertugas untuk membantu akademis anggota KMK Fasilkom UI dan mengembangkan teknologi informasi untuk KMK Fasilkom UI"

@@ -4,11 +4,12 @@ import SEKRETARIS from "assets/division/sekretaris.png";
 import WAKIL from "assets/division/wakil.png";
 import Header from "components/SectionHeader/SectionHeader";
 import "./CoreDivision.css";
+import {useMediaQuery} from "react-responsive";
 
 export default function CoreDivision() {
   return (
     <div className="CoreDivision">
-      <Header color="#CFE7E7">Pengurus Inti</Header>
+      <Header color="#CFE7E7" isGallerypage={true}>Pengurus Inti</Header>
       <CoreDivisionMember
         position="Koordinator Fakultas"
         name="Cornelita Lugita Santoso"
@@ -28,7 +29,7 @@ export default function CoreDivision() {
         pos="left"
       />
       <CoreDivisionMember
-        position="Wakil Sekretaris"
+        position="Bendahara"
         name="Marta Junike Dewi Anugrah"
         image={BENDAHARA}
         pos="right"
@@ -45,15 +46,17 @@ function CoreDivisionMember({position, name, image, pos}) {
     className += " Right";
   }
 
+  const isMobile = useMediaQuery({maxWidth: 1280});
+
   return (
     <div className={className}>
-      {pos === "left" && <img src={image} alt={"Anggota Inti"} width="125vh"/>}
+      {pos === "left" && <img src={image} alt={"Anggota Inti"} width={isMobile ? "100vh" : "125vh"}/>}
       <div>
         <p className="CoreDivisionHeader">{position}</p>
         <p>{name}</p>
       </div>
       {pos === "right" && (
-        <img src={image} alt={"Anggota Inti"} width="125vh"/>
+        <img src={image} alt={"Anggota Inti"} width={isMobile ? "100vh" : "125vh"}/>
       )}
     </div>
   );

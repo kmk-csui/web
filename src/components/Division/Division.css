@@ -20,3 +20,15 @@
 .Program {
     margin-top: 2rem;
 }
+
+@media screen and (max-width: 1280px) {
+    .Division {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .HeaderDivision {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
