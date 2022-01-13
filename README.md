@@ -82,3 +82,11 @@ git push origin joni/navbar-footer
 git pull origin master
 ```
 On your branch!
+
+## Public folder
+There is a separation of some assets into `public` and `src/assets` folder. 
+The reason is that there are many gallery image and react [requires](https://github.com/facebook/create-react-app/issues/585) 
+you to import each of them individually which will be tedious and time consuming. 
+The solution is the proposed (and accepted) public folder which can be read more 
+[here](https://github.com/facebook/create-react-app/pull/703) 
+and [here](https://create-react-app.dev/docs/using-the-public-folder/) 
