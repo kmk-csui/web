@@ -1,11 +1,12 @@
 import ArrowUp from "assets/arrow-up.svg";
 import Hamburger from "assets/hamburger.svg";
-import KMKLogo from "assets/KMK-logo-small.svg";
 import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import "./Navbar.css";
+import {Desktop, Mobile} from "../Responsive/Responsive";
+import KMKLogo from "../../assets/KMK-logo-small.svg";
 
-export default function Navbar() {
+export default function Navbar(isHomePage = false) {
   const [navToggled, setNavToggled] = useState(false);
   const [windowDimension, setWindowDimension] = useState(null);
 
@@ -58,7 +59,15 @@ export default function Navbar() {
               : {}
           }
         >
-          <img src={KMKLogo} className="nav-logo" alt="KMK-logo"/>
+          <Desktop>
+            <img src={KMKLogo} className="nav-logo" alt="KMK-logo"/>
+          </Desktop>
+          <Mobile>
+            {isHomePage
+              ? <img src={KMKLogo} className="nav-logo" alt="KMK-logo"/>
+              : <div className="nav-logo"/>
+            }
+          </Mobile>
           <p>KMK Fasilkom UI</p>
         </a>
         {(isMobile && navToggled) || !isMobile ? (

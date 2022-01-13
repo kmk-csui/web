@@ -12,3 +12,14 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+@media screen and (max-width: 1280px) {
+    .Footer {
+        font-size: 0.75rem;
+    }
+
+    .Footer > p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
