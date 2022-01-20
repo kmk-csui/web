@@ -7,10 +7,14 @@ import Division from "components/Division/Division";
 import Header from "components/Header/Header";
 import "./DivisionPage.css";
 import CoreDivision from "components/Division/CoreDivision";
+import {Helmet} from "react-helmet";
 
 export default function DivisionPage() {
   return (
     <>
+      <Helmet>
+        <title>Divisi - KMK CSUI</title>
+      </Helmet>
       <Header headerTitle="Divisi KMK Fasilkom UI 2021"/>
       <div className="DivisionPage">
         <div className="MemberList">
