@@ -9,28 +9,28 @@ import {useMediaQuery} from "react-responsive";
 export default function CoreDivision() {
   return (
     <div className="CoreDivision">
-      <Header color="#CFE7E7" isGallerypage={true}>Pengurus Inti</Header>
+      <Header color="#ffefdc" isGallerypage={true}>Pengurus Inti</Header>
       <CoreDivisionMember
         position="Koordinator Fakultas"
-        name="Cornelita Lugita Santoso"
+        name="Gregorius Farel"
         image={KETUA}
         pos="left"
       />
       <CoreDivisionMember
         position="Wakil Koordinator Fakultas"
-        name="Dionisius Baskoro Samudra"
+        name="Johanes Raka"
         image={WAKIL}
         pos="right"
       />
       <CoreDivisionMember
         position="Sekretaris"
-        name="Francis Wibisono"
+        name="Cynthia Philander"
         image={SEKRETARIS}
         pos="left"
       />
       <CoreDivisionMember
         position="Bendahara"
-        name="Marta Junike Dewi Anugrah"
+        name="Paskalis Abhista"
         image={BENDAHARA}
         pos="right"
       />
@@ -46,17 +46,17 @@ function CoreDivisionMember({position, name, image, pos}) {
     className += " Right";
   }
 
-  const isMobile = useMediaQuery({maxWidth: 1280});
+  const isMobile = useMediaQuery({maxWidth: 1279});
 
   return (
     <div className={className}>
-      {pos === "left" && <img src={image} alt={"Anggota Inti"} width={isMobile ? "100vh" : "125vh"}/>}
+      {pos === "left" && <img src={image} alt={"Anggota Inti"} width={isMobile ? "100vh" : "125vh"} className="ProfileImage" />}
       <div>
         <p className="CoreDivisionHeader">{position}</p>
         <p>{name}</p>
       </div>
       {pos === "right" && (
-        <img src={image} alt={"Anggota Inti"} width={isMobile ? "100vh" : "125vh"}/>
+        <img src={image} alt={"Anggota Inti"} width={isMobile ? "100vh" : "125vh"} className="ProfileImage" />
       )}
     </div>
   );
