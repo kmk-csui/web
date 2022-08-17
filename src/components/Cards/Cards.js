@@ -1,4 +1,5 @@
 import React from 'react'
+import './Cards.css'
 import CardItems from 'components/CardItems/CardItems'
 import SectionHeader from 'components/SectionHeader/SectionHeader'
 
@@ -8,7 +9,7 @@ function Cards() {
       <div className='cards__container'>
           <div className='cards__wrapper'>
             <SectionHeader color="#CFE7E7" isGallerypage={true}>Upcoming Events</SectionHeader>
-            <ul className='cards__items'>
+            <div className='cards__items'>
                 <CardItems
                 src='../gallery/kut-2019/1.jpg'
                 text='kut 2019'
@@ -42,12 +43,45 @@ function Cards() {
                 link='bit.ly/daftar'
                 division='PSDM'
                 />
-            </ul>
+                <CardItems
+                src='../gallery/kut-2019/1.jpg'
+                text='kut 2019'
+                label='kut'
+                path='/event'
+                tanggal='Friday, July 1'
+                jam='13.00'
+                lokasi='Discord'
+                link='bit.ly/daftar'
+                division='PSDM'
+                />
+                <CardItems
+                src='../gallery/kut-2019/1.jpg'
+                text='kut 2019'
+                label='kut'
+                path='/event'
+                tanggal='Friday, July 1'
+                jam='13.00'
+                lokasi='Discord'
+                link='bit.ly/daftar'
+                division='PSDM'
+                />
+                <CardItems
+                src='../gallery/kut-2019/1.jpg'
+                text='kut 2019'
+                label='kut'
+                path='/event'
+                tanggal='Friday, July 1'
+                jam='13.00'
+                lokasi='Discord'
+                link='bit.ly/daftar'
+                division='PSDM'
+                />
+            </div>
 
             <hr className='main__break__line'></hr>
 
             <SectionHeader color="#CFE7E7" isGallerypage={true}>Previous Events</SectionHeader>
-            <ul className='cards__items'>
+            <div className='cards__items'>
                 <CardItems
                 src='../gallery/kut-2019/1.jpg'
                 text='kut 2019'
@@ -81,7 +115,29 @@ function Cards() {
                 link='bit.ly/daftar'
                 division='PSDM'
                 />
-            </ul>
+                <CardItems
+                src='../gallery/kut-2019/1.jpg'
+                text='kut 2019'
+                label='kut'
+                path='/event'
+                tanggal='Friday, July 1'
+                jam='13.00'
+                lokasi='Discord'
+                link='bit.ly/daftar'
+                division='PSDM'
+                />
+                <CardItems
+                src='../gallery/kut-2019/1.jpg'
+                text='kut 2019'
+                label='kut'
+                path='/event'
+                tanggal='Friday, July 1'
+                jam='13.00'
+                lokasi='Discord'
+                link='bit.ly/daftar'
+                division='PSDM'
+                />
+            </div>
           </div>
       </div>
     </div>
