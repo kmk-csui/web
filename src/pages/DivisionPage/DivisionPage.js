@@ -20,7 +20,7 @@ export default function DivisionPage() {
       <Helmet>
         <title>Divisi - KMK CSUI</title>
       </Helmet>
-      <Header headerTitle="Divisi KMK Fasilkom UI 2021"/>
+      <Header headerTitle="Divisi KMK Fasilkom UI 2022"/>
       <div className="DivisionPage">
         <div className="MemberList">
           <CoreDivision/>
