@@ -6,6 +6,6 @@ export function Desktop({children}) {
 }
 
 export function Mobile({children}) {
-  const isMobile = useMediaQuery({maxWidth: 1280})
+  const isMobile = useMediaQuery({maxWidth: 1279})
   return isMobile ? children : null
 }

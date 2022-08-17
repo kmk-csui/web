@@ -27,7 +27,7 @@ export default function Header({headerTitle, isHomePage}) {
 }
 
 Header.defaultProps = {
-  headerTitle: "KMK Fasilkom UI 2021",
+  headerTitle: "KMK Fasilkom UI 2022",
   isHomePage: false,
 };
 
