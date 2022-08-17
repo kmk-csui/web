@@ -10,7 +10,7 @@ export default function Header({headerTitle, isHomePage}) {
         <header className="header">
           <img src={LogoKMK} className="logo" alt="Logo KMK Fasilkom"/>
           <h1 className="headerTitle">{headerTitle}</h1>
-          <h2 className="tagline">#LuceatLuxVestra</h2>
+          <h2 className="tagline">#FamiliaEtBeneficium</h2>
         </header>
       </Desktop>
       <Mobile>
@@ -19,7 +19,7 @@ export default function Header({headerTitle, isHomePage}) {
         }>
           {isHomePage && <img src={LogoKMK} className="logo" alt="Logo KMK Fasilkom"/>}
           <h1 className="headerTitleMobile">{headerTitle}</h1>
-          {isHomePage && <h2 className="tagline">#LuceatLuxVestra</h2>}
+          {isHomePage && <h2 className="tagline">#FamiliaEtBeneficium</h2>}
         </header>
       </Mobile>
     </>

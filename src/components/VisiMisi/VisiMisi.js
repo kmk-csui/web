@@ -6,9 +6,7 @@ export default function VisiMisi() {
     <section className="visimisi">
       <Header color="#FFEFDC">Visi</Header>
       <div className="deskripsivisi">
-        Menjadikan KMK Fasilkom UI sebagai rumah dan wadah bagi semua anggotanya
-        untuk dapat saling mengembangkan diri dengan berlandaskan kekeluargaan
-        dan cinta kasih Allah.
+        Menjadikan KMK Fasilkom UI sebagai wadah bagi mahasiswa Katolik di Fasilkom UI menjalin relasi dan saling mendukung dalam perkuliahan dan kehidupan.
       </div>
 
       <Header color="#CFE7E7">Misi</Header>
@@ -16,22 +14,20 @@ export default function VisiMisi() {
         <div>
           {/* <div className="fotovisimisi"><img src={logo} className="visimisilogo App-logo" alt="logo" /></div> */}
           <p>
-            Mendekatkan dan mempererat tali kekeluargaan antar sesama anggota
-            KMK Fasilkom UI.
+            Menjalin kedekatan antaranggota KMK Fasilkom UI melalui berbagai kegiatan yang bermanfaat
           </p>
         </div>
 
         <div>
           {/* <div className="fotovisimisi"><img src={logo} className="visimisilogo App-logo" alt="logo" /></div> */}
           <p>
-            Menjadikan KMK Fasilkom UI sebagai wadah untuk saling mengembangkan
-            diri.
+            Meningkatkan rasa kepedulian dan rasa ingin saling membantu antaranggota KMK Fasilkom UI
           </p>
         </div>
 
         <div>
           {/* <div className="fotovisimisi"><img src={logo} className="visimisilogo App-logo" alt="logo" /></div> */}
-          <p>Melibatkan Tuhan dalam setiap kegiatan KMK Fasilkom UI.</p>
+          <p>Mengajak anggota KMK Fasilkom UI mengikuti berbagai kegiatan rohani</p>
         </div>
       </div>
     </section>
