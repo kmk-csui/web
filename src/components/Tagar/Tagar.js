@@ -6,8 +6,8 @@ export default function Tagar() {
     <section className="Tagar">
       <Header color="#CFE7E7">Tagar Kami</Header>
       <div className="TagarContent">
-        <p className="Latin">#LuceatLuxVestra</p>
-        <p className="Englist">Let Your Light Shine</p>
+        <p className="Latin">#FamiliaEtBeneficium</p>
+        {/* <p className="Englist">Let Your Light Shine</p> */}
       </div>
     </section>
   );
