@@ -17,9 +17,18 @@ margin: 0 auto;
 }
 
 .cards__wrapper {
-margin: 50px 0 45px;
+  margin: 50px 0 45px;
+  width:100%;
 }
-
+.no_event{
+  display: flex;
+  height:250px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.no_event_text{
+  margin:auto
+}
 .cards__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -29,11 +38,36 @@ margin: 50px 0 45px;
   margin-top: 100px;
 }
 
+.loading{
+  margin-top:100px;
+  margin-bottom:100px;
+  display: table;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.inner{
+  display: table-cell;
+  vertical-align: middle;
+  width:100%;
+}
 
 @media screen and (max-width: 1280px) {
   .cards__items {
       grid-template-columns: 1fr;
       gap: 1rem;
+  }
+  .cards{
+    padding:0;
+  }
+  .cards__container{
+    width:90vw
+  }
+  .cards__item{
+    max-width:90vw;
+  }
+  .loading{
+    height:calc(100vh - 354px)
   }
 }
 
