@@ -42,7 +42,7 @@ export default function Navbar(isHomePage = false) {
           isMobile && navToggled
             ? {
               background:
-                "linear-gradient(180deg, rgba(121, 163, 202, 0.64) 0%, #79a3ca 100%)",
+                "linear-gradient(180deg, #F5D6CC 0%, #FDF0D5 100%)",
             }
             : {}
         }
@@ -54,7 +54,7 @@ export default function Navbar(isHomePage = false) {
             isMobile && !navToggled
               ? {
                 background:
-                  "linear-gradient(180deg, #cfe7e7 0%, #ffefdc 100%)",
+                  "linear-gradient(180deg, #F5D6CC 0%, #FDF0D5 100%)",
               }
               : {}
           }
@@ -80,6 +80,9 @@ export default function Navbar(isHomePage = false) {
             </li>
             <li>
               <Link to="gallery">Galeri</Link>
+            </li>
+            <li>
+              <Link to="event">Event</Link>
             </li>
           </ul>
         ) : null}
