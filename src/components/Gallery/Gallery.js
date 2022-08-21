@@ -1,38 +1,50 @@
 import "./Gallery.css";
 import GalleryItem from "./GalleryItem";
-
-const baseURL = `${process.env.PUBLIC_URL}/gallery`
-const images = [
-  {src: `${baseURL}/kut-2019/1.jpg`, event: 'KUT 2019', year: '2019'},
-  {src: `${baseURL}/kut-2019/2.jpg`, event: 'KUT 2019', year: '2019'},
-  {src: `${baseURL}/kut-2019/3.jpg`, event: 'KUT 2019', year: '2019'},
-  {src: `${baseURL}/weekend-2019/1.jpg`, event: 'Weekend 2019', year: '2019'},
-  {src: `${baseURL}/weekend-2019/2.jpg`, event: 'Weekend 2019', year: '2019'},
-  {src: `${baseURL}/weekend-2019/3.jpg`, event: 'Weekend 2019', year: '2019'},
-  {src: `${baseURL}/weekend-2020/1.jpg`, event: 'Weekend 2020', year: '2020'},
-  {src: `${baseURL}/weekend-2020/2.jpg`, event: 'Weekend 2020', year: '2020'},
-  {src: `${baseURL}/weekend-2020/3.jpg`, event: 'Weekend 2020', year: '2020'},
-  {src: `${baseURL}/wisgan-2019_2020/1.jpg`, event: 'WisGan 2019_2020', year: '2019'},
-  {src: `${baseURL}/wisgan-2019_2020/2.jpg`, event: 'WisGan 2019_2020', year: '2019'},
-  {src: `${baseURL}/wisgan-2019_2020/3.jpg`, event: 'WisGan 2019_2020', year: '2019'},
-  {src: `${baseURL}/kumpul-bersama.png`, event: 'Kumpul Bersama', year: '2019'},
-]
+import { useEffect, useState } from 'react';
+import { fetchWrapper } from 'components/FetchAPI/apiHandlers';
+import LoadingSpinner from 'components/Spinner/Spinner';
 
 export default function Gallery() {
-  return (
-    <section className="Gallery">
-      {
-        images.map((image, index) => {
-          return (
-            <GalleryItem
-              key={index}
-              src={image.src}
-              event={image.event}
-              year={image.year}
-            />
-          )
-        })
-      }
-    </section>
-  );
+  const [images,setImages] = useState()
+  const [loading,setLoading] = useState(true)
+
+  useEffect(()=>{
+    const fetchData = async () => {
+      await fetchWrapper.get("gallery/json")
+        .then((res)=>{
+          setImages(res)
+        }).catch((error) => {
+          alert(error)
+        });
+    };
+    fetchData();
+  },[])
+  useEffect(()=>{
+    if(images!==undefined)
+      setLoading(false)
+  },[images])
+  if(loading){
+    return(
+      <div className="loading">
+        <div className="inner"><LoadingSpinner></LoadingSpinner></div>  
+      </div>
+    )
+  }else{
+    return (
+      <section className="Gallery">
+        {
+          images?.map((image, index) => {
+            return (
+              <GalleryItem
+                key={index}
+                src={"https://websitekmk.s3.amazonaws.com/"+image.fields.image}
+                event={image.fields.nama}
+                year={new Date(image.fields.tanggal).getFullYear()}
+              />
+            )
+          })
+        }
+      </section>
+    );
+  }
 }

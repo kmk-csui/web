@@ -21,8 +21,6 @@ function Cards() {
         setAcaraPast([])
         acaraTemp.forEach(acara => {
           if(new Date(acara.fields.tanggal).setHours(0,0,0,0) < TANGGAL){
-            console.log("test 1")
-            console.log(acara)
             setAcaraPast(acaraPast => [...acaraPast, acara])
           }
           else{
