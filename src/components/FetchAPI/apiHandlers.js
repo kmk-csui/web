@@ -4,7 +4,7 @@ export const fetchWrapper = {
     put,
     delete: _delete
 };
-const BASE_URL = "https://kmk-csui-backend.herokuapp.com/"
+const BASE_URL = "https://kmk-csui-backend.up.railway.app/"
 function get(url) {
     const requestOptions = {
         method: 'GET',
